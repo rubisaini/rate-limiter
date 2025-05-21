@@ -8,12 +8,7 @@ agent any
         }
         stage('test') {
             steps {
-              sh  'echo "test app"'
-            }
-        }
-        stage('deploy') {
-            steps {
-              sh  'echo "deploy app"'
+              sh  'node server.js'
             }
         }
     }
